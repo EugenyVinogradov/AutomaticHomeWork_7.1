@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:12-alpine
+    container_name: "my_postgres"
+    environment:
+    - POSTGRES_PASSWORD=12345
+    - POSTGRES_USER=user
+    - POSTGRES_DB=database
+    - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+    - ../D:\Data
+    ports:
+      - '5432:5432'
