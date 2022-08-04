@@ -7,8 +7,7 @@ services:
     - POSTGRES_PASSWORD=12345
     - POSTGRES_USER=user
     - POSTGRES_DB=database
-    - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
-    - ../D:\Data
+    - D:\Data:/var/lib/postgresql/data
     ports:
       - '5432:5432'
