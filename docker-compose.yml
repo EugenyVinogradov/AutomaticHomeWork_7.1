@@ -8,6 +8,6 @@ services:
     - POSTGRES_USER=user
     - POSTGRES_DB=database
     volumes:
-    - D:\Data:/var/lib/postgresql/data
+    - .\Data:/var/lib/postgresql/data
     ports:
       - '5432:5432'
